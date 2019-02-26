@@ -1,0 +1,14 @@
+int ticks = 0;
+bool end_game = false;
+
+while (true) {
+    float fps = 60.0;
+
+    update(ticks, end_game);
+    render(ticks);
+
+    if (end_game)
+    {
+        break;
+    }
+}

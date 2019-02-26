@@ -1,0 +1,10 @@
+int test = 1;
+bool check = false;
+if (check)
+{
+    return test;
+}
+else
+{
+    return 2.0
+}
