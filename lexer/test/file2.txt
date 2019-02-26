@@ -1,10 +1,1 @@
-int test = 1;
-bool check = false;
-if (check)
-{
-    return test;
-}
-else
-{
-    return 2.0
-}
+while (fahr < upper) a = 23.00 whileend

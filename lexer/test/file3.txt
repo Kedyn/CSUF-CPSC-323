@@ -1,14 +1,4 @@
-int ticks = 0;
-bool end_game = false;
-
-while (true) {
-    float fps = 60.0;
-
-    update(ticks, end_game);
-    render(ticks);
-
-    if (end_game)
-    {
-        break;
-    }
-}
+int 13 12.2 12. ! int test ()
+blah
+blah
+multi-line comment ! 12*3 3 * 12

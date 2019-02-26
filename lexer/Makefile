@@ -5,7 +5,7 @@ default: Lexer
 headers: src/analyze.hpp src/delimiters.hpp src/identifiers.hpp src/keywords.hpp src/operators.hpp src/separators.hpp
 
 Lexer: headers src/main.cpp
-	${CXX} src/main.cpp -o dist/Lexer
+	${CXX} src/main.cpp -o bin/Lexer
 
 clean:
-	rm -rf dist/Lexer
+	rm -rf bin/Lexer
