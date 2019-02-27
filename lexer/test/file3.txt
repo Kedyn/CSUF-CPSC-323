@@ -2,3 +2,4 @@ int 13 12.2 12. ! int test ()
 blah
 blah
 multi-line comment ! 12*3 3 * 12
+int a, b, c, x;

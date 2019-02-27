@@ -2,7 +2,6 @@
 #include "keywords.hpp"
 #include "operators.hpp"
 #include "separators.hpp"
-#include "identifiers.hpp"
 
 #include <fstream>
 #include <cctype>
@@ -23,7 +22,7 @@ void checkCharacter(const char &ch)
 
 void analyze(const char *file)
 {
-    uint state_table[16][25] = {
+    int state_table[16][25] = {
         // l   d   $   .   !   *   +   -   =   /   >   <   %   '   (   )   {   }   [   ]   ,   :   ;   D   A
         {2, 7, 6, 16, 12, 15, 15, 15, 15, 15, 15, 15, 15, 16, 16, 16, 16, 16, 16, 16, 16, 16, 16, 6, 6},      //  1
         {2, 3, 4, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 6},                          //  2
@@ -49,7 +48,7 @@ void analyze(const char *file)
 
     char ch;
 
-    uint current_state = 0;
+    int current_state = 0;
     size_t row = 0;
     size_t col = 0;
 
